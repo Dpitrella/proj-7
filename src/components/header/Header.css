@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 10%;
+    width: 1240px;
+    
+    
+}
+.pages-head {
+    display: flex;
+    gap: 50px;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: right;
+}
+
+.accueil {
+    text-decoration: underline;
+}

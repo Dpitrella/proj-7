@@ -1,0 +1,41 @@
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en la cuadrícula */
+    gap: 20px;
+}
+
+.article-item {
+    background-color: #ff6b6b; /* Color similar al de la imagen */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Ajusta la altura según tus necesidades */
+}
+
+.article-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-item h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.article-item p {
+    font-size: 0.9rem;
+    color: white;
+}

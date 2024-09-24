@@ -1,0 +1,39 @@
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1240px;
+    height: 223px;
+    margin: 60px 10%;
+    position: relative;
+    
+}.banner-content img {
+    display: flex;
+    
+    object-fit: cover;
+    width: 1240px;
+    height: 223px;
+    border-radius: 20px;
+}
+.banner-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 160%;
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat' sans-serif;
+
+}
+.banner-content::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 20px; 
+    box-shadow: -1px 5px 12px 0px #00000040;
+
+}
