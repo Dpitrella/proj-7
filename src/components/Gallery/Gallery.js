@@ -7,17 +7,14 @@ function Gallery() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json', {
-                    mode: 'no-cors'
-                });                
+                const response = await fetch('/bdd.json'); // Asegúrate de que bdd.json esté en la carpeta public
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Error al cargar los datos');
                 }
-
-                const data = await response.json(); // Asegúrate de que el archivo sea JSON
+                const data = await response.json();
                 setItems(data); // Asumiendo que data es un array
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error('Error al obtener los datos:', error);
             }
         };
 
@@ -25,20 +22,21 @@ function Gallery() {
     }, []);
 
     return (
-        <div className='gallery-content'>
-            <div className='article-grid'>
-                {items.map(item => (
-                    <div key={item.id} className='article-item'>
-                        {/* Elimina la imagen si no la necesitas, o ajusta su estilo */}
-                        {/* <img src={item.cover} alt={item.title} /> */}
+        <div className="gallery-content">
+            <div className="article-grid">
+                {items.map((item) => (
+                    <a href='#'>
+                        <div key={item.id} className="article-item">
+                        <img src={item.cover} alt={item.title} />
                         <h2>{item.title}</h2>
-                        {/* Puedes eliminar el texto adicional */}
+                        
                     </div>
+                    </a>
+                    
                 ))}
             </div>
         </div>
     );
-    
 }
 
 export default Gallery;

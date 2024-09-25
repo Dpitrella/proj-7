@@ -14,7 +14,7 @@ function App() {
       <div className='Banner'>
         <Banner />
       </div>
-      <div >
+      <div className='divGall' >
         <Gallery />
       </div>
     </div>
