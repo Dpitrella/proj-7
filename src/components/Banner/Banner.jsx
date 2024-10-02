@@ -1,4 +1,4 @@
-import imgBanner from './IMG.png'
+import imgBanner from '../../assets/bannerHome/IMG.png'
 import './Banner.css'
 function Banner() {
     return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Gallery.css';
+import '../Gallery/Gallery.css';
 
 function Gallery() {
     const [items, setItems] = useState([]);
@@ -7,14 +7,17 @@ function Gallery() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/bdd.json'); // Asegúrate de que bdd.json esté en la carpeta public
+                const response = await fetch("/data/bdd.json"); 
+                console.log(response)
                 if (!response.ok) {
                     throw new Error('Error al cargar los datos');
                 }
                 const data = await response.json();
-                setItems(data); // Asumiendo que data es un array
+                console.log(data);
+                
+                setItems(data); 
             } catch (error) {
-                console.error('Error al obtener los datos:', error);
+            console.log(error)    
             }
         };
 
@@ -22,6 +25,7 @@ function Gallery() {
     }, []);
 
     return (
+        
         <div className="gallery-content">
             <div className="article-grid">
                 {items.map((item) => (
