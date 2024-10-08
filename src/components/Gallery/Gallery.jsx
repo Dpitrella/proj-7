@@ -8,16 +8,15 @@ function Gallery() {
         const fetchData = async () => {
             try {
                 const response = await fetch("/data/bdd.json"); 
-                console.log(response)
+               
                 if (!response.ok) {
-                    throw new Error('Error al cargar los datos');
+                    throw new Error('Error');
                 }
                 const data = await response.json();
-                console.log(data);
-                
                 setItems(data); 
+
             } catch (error) {
-            console.log(error)    
+                console.log(error);
             }
         };
 
@@ -25,18 +24,16 @@ function Gallery() {
     }, []);
 
     return (
-        
         <div className="gallery-content">
             <div className="article-grid">
                 {items.map((item) => (
-                    <a href='#'>
-                        <div key={item.id} className="article-item">
-                        <img src={item.cover} alt={item.title} />
-                        <h2>{item.title}</h2>
-                        
-                    </div>
-                    </a>
                     
+                    <a key={item.id} href='#'> 
+                        <div className="article-item">
+                            <img src={item.cover} alt={item.title} />
+                            <h2>{item.title}</h2>
+                        </div>
+                    </a>
                 ))}
             </div>
         </div>

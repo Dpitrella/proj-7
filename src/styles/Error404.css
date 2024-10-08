@@ -1,0 +1,29 @@
+h2 {
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    margin: 100px;
+    text-align: center;
+    color: rgba(255, 96, 96, 1);
+
+}
+.text-content {
+
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    
+    color: rgba(255, 96, 96, 1);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    color: black;
+}

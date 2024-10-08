@@ -1,22 +1,25 @@
 .divGall {
-    width: 1200px;
+    display: flex;
+    justify-content: center;
+    width: 1350px;
     background-color: rgba(246, 246, 246, 1);
-    margin: 10px 150px;
-    padding: 20px;
+    padding: 80px 0px 80px 0px;
     border-radius: 20px;
+    
 }
 
 .gallery-content {
     display: flex;
     justify-content: center;
     
+    
 }
 
 .article-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    margin-top: 50px;
+    gap: 80px;
+    
 }
 
 .article-item {
@@ -25,6 +28,7 @@
     height: 340px;
     overflow: hidden; 
     background: linear-gradient(to top) black ;
+    border-radius: 10px;
 }
 
 .article-item img {

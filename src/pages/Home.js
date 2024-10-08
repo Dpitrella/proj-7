@@ -1,7 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Gallery from '../components/Gallery/Gallery'
 import Banner from '../components/Banner/Banner'
-import '../styles/App.css';
+
+
+
 
 function Home() {
 
@@ -13,6 +17,7 @@ function Home() {
     <div className='divGall'>
       <Gallery />
     </div>
+    
    </main>
       
     
