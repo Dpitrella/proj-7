@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../Gallery/Gallery.css';
+import { Link } from 'react-router-dom';
 
 function Gallery() {
     const [items, setItems] = useState([]);
@@ -19,21 +20,23 @@ function Gallery() {
                 console.log(error);
             }
         };
-
+        
         fetchData();
     }, []);
 
     return (
         <div className="gallery-content">
             <div className="article-grid">
+            
                 {items.map((item) => (
-                    
-                    <a key={item.id} href='#'> 
-                        <div className="article-item">
+                 <Link key={item.id} to={`/logement/${item.id}`}>
+                     <div className="article-item">
                             <img src={item.cover} alt={item.title} />
                             <h2>{item.title}</h2>
                         </div>
-                    </a>
+                 </Link>
+                       
+                    
                 ))}
             </div>
         </div>

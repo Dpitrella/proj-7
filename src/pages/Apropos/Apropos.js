@@ -1,24 +1,20 @@
 import React from 'react';
-import BannerApropos from '../components/BannerApropos/BannerApropos'
-import '../styles/Apropos.css'
-
+import BannerApropos from '../../components/BannerApropos/BannerApropos'
+import './Apropos.css'
+import Collapse from '../../components/Collapse/Collapse';
 function Apropos() {
-    return (
-        <main>
-            <div>
-            <BannerApropos />
-        </div>
-        <div id="about-accordion">
-        <details className="about-container">
-          <summary className="about-title">
-            Fiabilité <i className="fa-solid fa-chevron-down"></i>
-          </summary>
-          <p className="about-text">
-            Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+  return (
+    <main>
+      <div>
+        <BannerApropos />
+      </div>
+      <div id="about-accordion">
+        <Collapse
+          text=" Les annonces postées sur Kasa garantissent une fiabilité totale. Les
             photos sont conformes aux logements, et toutes les informations sont
-            régulièrement vérifiées par nos équipes.
-          </p>
-        </details>
+            régulièrement vérifiées par nos équipes."
+          title="Fiabilite"
+        />
 
         <details className="about-container">
           <summary className="about-title">
@@ -56,9 +52,9 @@ function Apropos() {
           </p>
         </details>
       </div>
-        </main>
-        
-    )
+    </main>
+
+  )
 }
 
 export default Apropos

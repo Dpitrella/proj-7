@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './styles/index.css';
-import Home from './pages/Home'
-import Apropos from './pages/Apropos'
-import Error404 from './pages/Error404'
-import Logement from './pages/Logement'
+import './index.css';
+import Home from './pages/Home/Home'
+import Apropos from './pages/Apropos/Apropos'
+import Error404 from './pages/Error/Error404'
+import Logement from './pages/Logement/Logement'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,8 +15,8 @@ root.render(
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path='/Apropos' element={<Apropos />} />
-      <Route path='Logement' element={<Logement />} />
+      <Route path='/apropos' element={<Apropos />} />
+      <Route path='/logement/:id' element={<Logement />} />
       <Route path='*' element={<Error404 />} />
     </Routes>
     <Footer />
