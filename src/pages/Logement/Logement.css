@@ -1,0 +1,78 @@
+#intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    left: 9%;
+    font-family: Montserrat;
+}
+
+#intro-title {
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    text-align: left;
+    color: rgba(255, 96, 96, 1);
+
+}
+
+#intro-location {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;
+    color: black;
+    margin: 0px;
+
+}
+
+#logement-info {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    
+    left: 9%;
+    width: 83%;
+    gap: 50px;
+}
+
+#host-info {
+    display: flex;
+    position: absolute;
+    width: 167px;
+    height: 64px;
+    top: 660px;
+    right: 10%;
+
+
+
+}
+
+#host-info-picture {
+    display: flex;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    left: 20px;
+    bottom: 10px;
+}
+
+#host-name {
+    display: flex;
+    width: 93px;
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: right;
+    color: rgba(255, 96, 96, 1);
+    margin: 0%;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}

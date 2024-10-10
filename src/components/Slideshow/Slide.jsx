@@ -16,7 +16,7 @@ function Slide({ pictures }) {
                 setItems(data); 
                 
             } catch (error) {
-                console.log(error);
+               
             }
         };
         
@@ -34,10 +34,10 @@ function Slide({ pictures }) {
     return (
         <section id="gallery"> 
             {pictures.length > 1 && (
-                <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
+                <i className="fa-solid fleches fa-chevron-left" onClick={prevSlide}></i>
             )}
             {pictures.length > 1 && (
-                <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
+                <i className="fa-solid fleches fa-chevron-right" onClick={nextSlide}></i>
             )}
 
             {pictures.map((img, index) => {
