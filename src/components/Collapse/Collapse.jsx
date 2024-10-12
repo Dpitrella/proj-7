@@ -7,9 +7,9 @@ function Collapse({ text, title, Equip }) {
         {title} <i className="fa-solid fa-chevron-down"></i>
       </summary>
 
-      <p className="about-text">
+      <div className="about-text">
         {text}
-      </p>
+      </div>
     </details>
   )
 

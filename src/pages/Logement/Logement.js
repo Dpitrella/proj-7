@@ -47,29 +47,28 @@ function Logement() {
             </div>
 
 
-            <div id='host'>
-                <Rating rating={rating} range={range} />
-                <div id='host-info'>
-                    <p id='host-name'>{host.name}</p>
-                    <img id='host-info-picture' src={host.picture} alt='{host.name}' />
 
-                </div>
+            <Rating rating={rating} range={range} />
+            <div id='host-info'>
+                <p id='host-name'>{host.name}</p>
+                <img id='host-info-picture' src={host.picture} alt='{host.name}' />
+
             </div>
+
             <div id='logement-info'>
-                <Collapse 
+                <Collapse
                     text={description}
                     title="Description"
                 />
-                <Collapse 
+                <Collapse
                     title="Equipment"
                     text={
-                        <div> {}
-                            <ul>
-                                {equipments.map((equipment, index) => (
-                                    <li key={index}>{equipment}</li>
-                                ))}
-                            </ul>
-                        </div>
+                        <ul>
+                            {equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+
                     }
                 />
             </div>

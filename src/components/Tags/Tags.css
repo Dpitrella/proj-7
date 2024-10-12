@@ -1,0 +1,19 @@
+#tags {
+    margin-top: 10px;
+    display: grid;
+    width: 50% ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    
+  }
+  
+  .tag {
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff6060;
+    border-radius: 15px;
+    padding: 2% 0%;
+    gap: 10px
+    ;
+  }
