@@ -1,5 +1,5 @@
 
-
+@import "../../components/Collapse/Collapse.css";
 
 #about-accordion {
     display: flex;
@@ -9,25 +9,6 @@
     width: 100%;
     
 }
-.about-container{
-    width: 62%;
-    margin: 15px;
-    
-    
-}
-.abut-text{
-    text-align: start;
-}
-details {
-    margin-bottom: 5%;
-    user-select: none;
-    
-}
-
-details[open] summary .fa-chevron-down {
-    transform: rotate(-180deg);
-}
-
 summary {
     display: flex;
     align-items: center;
@@ -47,14 +28,7 @@ summary {
     transform: translate(-0%, 20%);
 }
 
-.fa-chevron-down {
-    transition: all 0.3s;
-    width: 20px;
-    height: 20px;
-    color: white;
-    font-size: 25px;
-    
-}
+
 
 details p {
     background-color: #F7F7F7;

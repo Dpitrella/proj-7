@@ -4,6 +4,7 @@ import Slide from '../../components/Slideshow/Slide';
 import Collapse from '../../components/Collapse/Collapse';
 import Tags from '../../components/Tags/tags';
 import Rating from '../../components/Rating/Rating';
+import Error from '../Error/Error404'
 import './Logement.css'
 function Logement() {
     const [logement, setLogement] = useState(null);
@@ -30,7 +31,7 @@ function Logement() {
     }, [id]);
 
     if (!logement) {
-        return <div>Error</div>;
+        return < Error />
     }
     const { title, location, tags, host, rating, description, equipments, } = logement;
     const range = [1, 2, 3, 4, 5];
