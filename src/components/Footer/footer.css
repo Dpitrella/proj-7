@@ -4,9 +4,9 @@
     align-items: center;
     flex-direction: column;
     background-color: black;
-    height: auto; /* Cambiado a auto para adaptarse al contenido */
+    height: auto; 
     margin-top: 50px;
-    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes */
+    padding: 20px; 
 }
 
 p {
@@ -22,13 +22,14 @@ p {
 
 @media (max-width: 768px) {
     .footer-content {
-        padding: 15px; /* Reduce el padding en pantallas más pequeñas */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        
+        padding: 15px;
+        height: 260px; 
     }
 
     p {
-        font-size: 20px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
-        line-height: 28px; /* Ajusta la altura de línea para mejor legibilidad */
+        font-size: 20px; 
+        line-height: 28px; 
     }
 }
 
@@ -41,7 +42,7 @@ p {
     }
 
     p {
-        font-size: 16px; /* Ajusta el tamaño de la fuente para móviles */
-        line-height: 24px; /* Ajusta la altura de línea para mejor legibilidad en móviles */
+        font-size: 16px; 
+        line-height: 24px; 
     }
 }

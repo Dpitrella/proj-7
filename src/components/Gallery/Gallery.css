@@ -62,14 +62,28 @@
 
 @media (max-width: 768px) {
     .article-grid {
-        grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas móviles */
-        gap: 20px; /* Reduce aún más el espacio entre elementos */
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
     }
 
     .article-item h2 {
-        font-size: 16px; /* Ajusta el tamaño de la fuente en móviles */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        padding: 5px; /* Reduce el padding */
+        font-size: 16px;
+        height: auto; 
+        padding: 5px; 
+    }
+    .divGall {
+        width: 640px;
+    }
+    .article-grid {
+        width: 400px;
+    }
+    .article-item {
+        width: 100%;
+    }
+    .article-item h2 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 15px;
     }
 }
 @media (max-width: 480px) {

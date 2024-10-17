@@ -23,7 +23,7 @@ main {
 
 @media (max-width: 768px) {
   body {
-      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+      font-size: 14px; 
       padding: 0px;
   }
 
@@ -34,12 +34,12 @@ main {
 
 @media (max-width: 480px) {
   body {
-      font-size: 12px; /* Ajusta aún más el tamaño de la fuente en móviles */
+      font-size: 12px; 
   }
 
   main {
     width: 400px;
-      flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+      flex-direction: column; 
       
      
   }

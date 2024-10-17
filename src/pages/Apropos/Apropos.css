@@ -51,7 +51,7 @@ details p, details li{
         width: 474px;
     }
     summary {
-        font-size: 14px; /* Ajusta aún más el tamaño de la fuente en móviles */
+        font-size: 14px; 
         height: 30px;
         
         width: 350px;
@@ -75,9 +75,9 @@ details p, details li{
         
     }
     details p, details li {
-        font-size: 14px; /* Ajusta el tamaño de la fuente para móviles */
-        padding-left: 4%; /* Ajusta el padding izquierdo en móviles */
-        padding-right: 4%; /* Ajusta el padding derecho en móviles */
+        font-size: 14px; 
+        padding-left: 4%; 
+        padding-right: 4%; 
     }
 }
 

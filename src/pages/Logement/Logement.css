@@ -83,6 +83,44 @@ ul {
     margin-top: 0px;
 }
 
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 100%;
+    }
+    #gallery {
+        margin-bottom: 20px;
+    }
+    #host-info {
+        position: relative;
+        flex-direction: row;
+        
+        top: 0px;
+        right: 0%;
+        left: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    #host-info-picture {
+        left: 0%;
+        right: 0%;
+        top: 0%;
+
+    }
+    #host-stars {
+        padding-left: 30px;
+        margin-right: 30%;
+        width: 25%;
+    }
+    .about-title {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+
 @media (max-width: 480px) {
     body{
         margin: 0px;

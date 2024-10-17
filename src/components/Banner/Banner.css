@@ -54,9 +54,32 @@
     }
 
     .banner-txt {
-        font-size: 1.5rem; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
-        padding: 0 10px; /* Añade padding horizontal para mejor legibilidad */
-        text-align: center; /* Alinea el texto al centro en pantallas pequeñas */
+        font-size: 1.5rem; 
+        padding: 0 10px; 
+        text-align: center; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Bann {
+        width: 90%;
+    }
+    .benner-content {
+        width: 400px;
+        justify-content: flex-start;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-img img {
+        
+       
+        width: 100%;
+    }
+    .banner-txt {
+        font-size: 19px;
+        width: 400px;
     }
 }
 
