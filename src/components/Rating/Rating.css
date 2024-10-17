@@ -1,12 +1,11 @@
 #host-stars {
   display: flex;
-  position: relative;
-  width: 10%;
-  left: 81%;
-  bottom: 50px;
-  margin:  0px;
+  width: 100%;
+  
 }
-
+#host-info {
+  gap: 20px;
+}
 .star {
   margin-right: 2%;
 }

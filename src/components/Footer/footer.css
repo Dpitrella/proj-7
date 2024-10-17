@@ -1,12 +1,12 @@
-
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: black;
-    height: 209px;
+    height: auto; /* Cambiado a auto para adaptarse al contenido */
     margin-top: 50px;
+    padding: 20px; /* Añade un padding para evitar que el contenido toque los bordes */
 }
 
 p {
@@ -16,5 +16,32 @@ p {
     font-weight: 500;
     line-height: 34.22px;
     text-align: center;
+}
 
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 15px; /* Reduce el padding en pantallas más pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    p {
+        font-size: 20px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+        line-height: 28px; /* Ajusta la altura de línea para mejor legibilidad */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 0%;
+        height: 200px; 
+        margin-top: 25px;
+        
+    }
+
+    p {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para móviles */
+        line-height: 24px; /* Ajusta la altura de línea para mejor legibilidad en móviles */
+    }
 }

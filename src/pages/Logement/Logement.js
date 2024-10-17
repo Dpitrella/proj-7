@@ -49,8 +49,9 @@ function Logement() {
 
 
 
-            <Rating rating={rating} range={range} />
+            
             <div id='host-info'>
+                <Rating rating={rating} range={range} />
                 <p id='host-name'>{host.name}</p>
                 <img id='host-info-picture' src={host.picture} alt='{host.name}' />
 

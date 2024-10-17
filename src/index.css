@@ -18,3 +18,29 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+
+
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+      padding: 0px;
+  }
+
+  main {
+      padding: 0%; 
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 12px; /* Ajusta aún más el tamaño de la fuente en móviles */
+  }
+
+  main {
+    width: 400px;
+      flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+      
+     
+  }
+}

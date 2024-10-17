@@ -1,16 +1,17 @@
-import imgBanner from '../../assets/bannerHome/IMG.png'
-import './Banner.css'
-function Banner() {
+
+import './Banner.css';
+
+function Banner({ imgSrc, texte } ) {
     return (
         <div className='banner-content'>
             <div className='banner-img'>
-            <img src={imgBanner} alt='image nature, Banner.' />
+                <img src={imgSrc} alt='image nature. Banner' />
             </div>
             <div className='banner-txt'>
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>{texte}</h1>
             </div>
         </div>
-    )
+    );
 }
 
-export default Banner
+export default Banner;

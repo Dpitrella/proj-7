@@ -1,4 +1,4 @@
-.banner-content {
+.banner-content  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     height: 223px;
     border-radius: 20px;
 }
-.banner-txt {
+.banner-txt  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +36,53 @@
     border-radius: 20px; 
     box-shadow: -1px 5px 12px 0px #00000040;
 
+}
+
+
+
+@media (max-width: 768px) {
+    .banner-content {
+       width: 100%;
+       margin-left: 0px;
+       margin-right: 0%;
+       
+    }
+    .banner-content img {
+        margin: 0%;
+        padding: 0%;
+        width: 400px;
+    }
+
+    .banner-txt {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+        padding: 0 10px; /* Añade padding horizontal para mejor legibilidad */
+        text-align: center; /* Alinea el texto al centro en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-txt {
+        font-size: 15px; 
+        padding-left: 0px;
+        text-align: left;
+        width: 264px;
+    }
+    .banner-content {
+        
+        width: 400px;
+        height: 150px;
+        margin: 0%;
+        
+     }
+     .banner-content img {
+         width: 400px;
+         height: 150px;
+         
+     }
+     .Bann {
+        display: flex;
+        justify-content: center;
+        height: 180px;
+        
+     }
 }

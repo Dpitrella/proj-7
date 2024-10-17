@@ -1,12 +1,14 @@
 import React from 'react';
-import BannerApropos from '../../components/BannerApropos/BannerApropos'
+import Banner from '../../components/Banner/Banner';
+import Imgabut from '../../assets/banerApropos/Image source 2.png'
 import './Apropos.css'
 import Collapse from '../../components/Collapse/Collapse';
 function Apropos() {
   return (
     <main>
-      <div>
-        <BannerApropos />
+      <div className='Bann'>
+        <Banner imgSrc={Imgabut} 
+        />
       </div>
       <div id="about-accordion">
         <Collapse

@@ -46,7 +46,40 @@ details p, details li{
 
 
 
+@media (max-width: 480px) {
+    main {
+        width: 474px;
+    }
+    summary {
+        font-size: 14px; /* Ajusta aún más el tamaño de la fuente en móviles */
+        height: 30px;
+        
+        width: 350px;
+        padding-right: 15px;
+        margin: 0;
+    }
+   
+    #about-accordion {
+        padding-right: 10px;
+        align-items: flex-start;
+        width: 350px;
+        margin-right: 70px;
 
+    }
+    .about-text {
+        width: 316px;
+    }
+    
+    .about-text.open  {
+        width: 316px;
+        
+    }
+    details p, details li {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para móviles */
+        padding-left: 4%; /* Ajusta el padding izquierdo en móviles */
+        padding-right: 4%; /* Ajusta el padding derecho en móviles */
+    }
+}
 
 
 
