@@ -4,7 +4,7 @@ import Slide from '../../components/Slideshow/Slide';
 import Collapse from '../../components/Collapse/Collapse';
 import Tags from '../../components/Tags/tags';
 import Rating from '../../components/Rating/Rating';
-import Error from '../Error/Error404'
+import Error from '../Error/Error'
 import './Logement.css'
 function Logement() {
     const [logement, setLogement] = useState(null);

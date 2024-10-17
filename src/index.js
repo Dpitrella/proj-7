@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Home from './pages/Home/Home'
 import Apropos from './pages/Apropos/Apropos'
-import Error404 from './pages/Error/Error404'
+import Error from './pages/Error/Error'
 import Logement from './pages/Logement/Logement'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -17,7 +17,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path='/apropos' element={<Apropos />} />
       <Route path='/logement/:id' element={<Logement />} />
-      <Route path='*' element={<Error404 />} />
+      <Route path='*' element={<Error />} />
     </Routes>
     <Footer />
   </BrowserRouter>
