@@ -1,15 +1,21 @@
 
 .about-container{
-    width: 62%;
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
     cursor: pointer;
     
 }
+.about-acordion {
+    display: flex;
+    gap: 20px;
+}
 .about-title {
     font-weight: bold;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90.5%;
 }
 
 .about-text {
@@ -29,6 +35,7 @@
 .about-text.open {
     max-height: 500px; 
     padding: 30px;
+    width: 92%;
 }
 
 .fa-chevron-up {
@@ -46,4 +53,38 @@
 
 .rotate {
     transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+
+    summary {
+        font-size: 14px; 
+        height: 30px;
+        
+        width: 100%;
+        
+        margin: 0;
+    }
+   
+    #about-accordion {
+        width: 100% ;
+    }
+    .about.contener {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        
+    }
+ 
+    .about-text {
+        width: 88% ;
+        margin: 0%;
+        padding: 0px;
+        padding-left: 20px;
+    }
+    .about-text.open {
+        width: 88% ;
+        margin: 0%;
+        padding: 20px;
+    }
 }

@@ -1,5 +1,5 @@
 
-@import "../../components/Collapse/Collapse.css";
+
 
 #about-accordion {
     display: flex;
@@ -9,9 +9,9 @@
     width: 100%;
     
 }
+
 summary {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     font-family: Montserrat;
     font-size: 18px;
@@ -38,6 +38,7 @@ details p {
     
 }
 
+
 details p, details li{
     text-align: start;
     font-size: 18px;
@@ -47,37 +48,13 @@ details p, details li{
 
 
 @media (max-width: 480px) {
-    main {
-        width: 474px;
-    }
-    summary {
-        font-size: 14px; 
-        height: 30px;
-        
-        width: 350px;
-        padding-right: 15px;
-        margin: 0;
-    }
-   
-    #about-accordion {
-        padding-right: 10px;
-        align-items: flex-start;
-        width: 350px;
-        margin-right: 70px;
-
-    }
-    .about-text {
-        width: 316px;
-    }
     
-    .about-text.open  {
-        width: 316px;
+    .about-text {
         
+        padding-left: 20px;
     }
-    details p, details li {
-        font-size: 14px; 
-        padding-left: 4%; 
-        padding-right: 4%; 
+    .about-container {
+        width: 90%;
     }
 }
 

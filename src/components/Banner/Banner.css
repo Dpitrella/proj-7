@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1360px;
+    width: auto;
     height: 223px;
     margin: 60px;
     position: relative;
@@ -11,7 +11,7 @@
     display: flex;
     
     object-fit: cover;
-    width: 1360px;
+    width: 1332px;
     height: 223px;
     border-radius: 20px;
 }
@@ -92,20 +92,23 @@
     }
     .banner-content {
         
-        width: 400px;
+        width: 350px;
         height: 150px;
         margin: 0%;
         
      }
      .banner-content img {
-         width: 400px;
+         width: 350px;
          height: 150px;
          
      }
      .Bann {
         display: flex;
         justify-content: center;
+        align-items: center;
         height: 180px;
+        width: 350px;
+        
         
      }
 }

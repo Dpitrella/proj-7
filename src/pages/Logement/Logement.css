@@ -1,4 +1,4 @@
-@import "../../components/Collapse/Collapse.css";
+
 #intro {
     display: flex;
     flex-direction: column;
@@ -39,6 +39,7 @@
     width: 83%;
     gap: 50px;
 }
+
 
 #host-info {
     display: flex;
@@ -180,12 +181,12 @@ ul {
         position: relative;
         flex-direction: row;
         top: 0px;
-        right: 0%;
-        left: 30px;
+    
+        left: -12px;
         margin-bottom: 10px;
         
         align-items: center;
-        width: 400px;
+        width: 350px;
         
     }
     #host-info-picture {
@@ -194,18 +195,24 @@ ul {
     #logement-info {
         flex-direction: column;
         left: 5px;
+        width: 100%;
+        margin-left: 10px;
     
     }
     .footer-content {
         width: 100%;
     }
     summary {
-        width: 380px;
-    }
-    .about-text {
-        width: 345px;
+        width: 320px;
     }
     .about-text.open {
-        width: 345px;
+        padding-left: 20px;
+    }
+    .about-text {
+       
+        padding-left: 20px;
+    }
+    .about-container {
+        width: 90%;
     }
 }
