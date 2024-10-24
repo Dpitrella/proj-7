@@ -38,3 +38,14 @@
     right: 10%;
     
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .gallery-image {
+        object-fit: cover;
+        width: 900px;
+        height: 415px;
+        border-radius: 25px;
+    
+    }
+}

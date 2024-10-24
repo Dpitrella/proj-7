@@ -11,13 +11,15 @@ function Collapse({ text, title }) {
     return (
         <div className="about-container">
             <summary className="about-title" onClick={toggleCollapse}>
-                {title} 
+                <p className="title">{title}</p>
                 <i className={`fa-solid fa-chevron-up ${isOpen ? 'rotate' : ''}`}></i>
             </summary>
-
-            <div className={`about-text ${isOpen ? 'open' : ''}`}>
-                {text}
+            <div className="footer-colapse">
+                <div className={`about-text ${isOpen ? 'open' : ''}`}>
+                    {text}
+                </div>
             </div>
+
         </div>
     );
 }

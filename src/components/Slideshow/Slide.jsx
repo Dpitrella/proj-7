@@ -42,7 +42,7 @@ function Slide({ pictures }) {
 
             {pictures.map((img, index) => {
                 return (
-                    <div key={index}>
+                    <div className='SlideContent' key={index}>
                         {index === current && (
                             <img
                                 src={img}
