@@ -48,7 +48,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .banner-content {
        width: 100%;
        margin-left: 0px;
@@ -67,10 +67,7 @@
         padding: 0 10px; 
         text-align: center; 
     }
-}
 
-
-@media (max-width: 768px) {
     .Bann {
         width: 90%;
     }
@@ -92,12 +89,12 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .banner-txt {
         font-size: 15px; 
         padding-left: 0px;
-        text-align: left;
-        width: 264px;;
+        text-align: center;
+      
     }
     .Bann {
         height: 180px;

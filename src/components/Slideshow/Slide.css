@@ -1,16 +1,21 @@
 
 #gallery{
-    display: flex;
     position: relative;
     justify-content: center;
     margin: 50px 0px 50px 0px;
 }
 .gallery-image {
     object-fit: cover;
-    width: 1380px;
+    width: 95%;
     height: 415px;
     border-radius: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
 
+}
+.SlideContent {
+    width: 90%;
+    margin-left: 5%;
 }
 .gallery-image-number {
     display: flex;
@@ -28,6 +33,8 @@
     top: 42%;
     color: white;
     font-size: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .fa-chevron-left {

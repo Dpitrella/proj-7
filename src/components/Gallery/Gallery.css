@@ -3,7 +3,7 @@
     justify-content: center;
     width: 85%;
     background-color: rgba(246, 246, 246, 1);
-    padding: 40px 0px 80px 0px;
+    padding: 40px 0px 0px 0px;
     border-radius: 20px;
     
 }
@@ -55,8 +55,8 @@
     color: rgba(255, 255, 255, 1);
     background: linear-gradient(0deg, black, transparent);
     width: 99%;
-    height: 50px;
-    padding: 10px 10px;
+    height: 30%;
+    padding: 20px 5px 0px ;
     margin: 0;
     border-radius: 8px;
     z-index: 10; 
@@ -65,53 +65,33 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .divGall {
-        width: 100%;
+        width: 90%;
         background-color: white;
         padding: 0%;
     }
     .gallery-content {
         width: 100%;
-        justify-content: flex-start;
+        
     }
     .article-grid {
-        gap: 26px;
+        gap: 20px;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
     .article-item {
-        width: 100%;
-    }
-  
-}
-
-
-@media (max-width: 768px) {
-    .article-grid {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 20px; 
+        
     }
 
     .article-item h2 {
         font-size: 16px;
         height: auto; 
         padding: 5px; 
-    }
-    .divGall {
-        width: 640px;
-    }
-    .article-grid {
-        width: 80%;
-    }
-    .article-item {
-        width: 100%;
-    }
-    .article-item h2 {
         padding-top: 20px;
         padding-bottom: 10px;
         padding-left: 15px;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .divGall {
         width: 100% ;
         margin-top: 10px;
@@ -127,15 +107,16 @@
         width: 100% ;
     }
     .article-item h2 {
-        padding-bottom: 20px;
+        height: 40px;
         padding-top: 20px;
         padding-left: 20px;
-        width: 390px;
+        width: 100%;
 
     }
     .article-grid {
         padding: 0%;
-        width: 100%;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
