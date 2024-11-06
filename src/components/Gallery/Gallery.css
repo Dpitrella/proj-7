@@ -78,9 +78,7 @@
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
-    .article-item {
-        
-    }
+    
 
     .article-item h2 {
         font-size: 16px;
